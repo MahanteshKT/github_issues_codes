@@ -1,0 +1,140 @@
+
+h1{
+    margin-bottom: 20px;
+}
+.issue{
+    position: inherit;
+    padding:20px 10px;
+    border: 1px solid rgba(144, 144, 144,0.5);
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px rgba(144, 144, 144,0.5);
+    background-color: rgb(237, 237, 255);
+}
+
+
+#issue-page-name{
+    color:blue;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+
+}
+
+.public{
+    border:1px solid grey;
+    border-radius:25%;
+    padding:2px 6px;
+    margin-left: 5px;
+    color:rgb(72, 72, 72);
+    
+}
+.issue .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.links p{
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.links p a{
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    
+}
+
+.links p:hover{
+    color: black;
+    background-color: #fcfcfc;
+    border-radius: 5px;
+}
+
+.issue-page{
+    margin:10px auto;
+    width: 100%;
+    border: 1px solid rgba(144, 144, 144,0.5);
+    box-shadow: 0px 0px 5px rgba(144, 144, 144,0.5);
+    border-radius: 8px;
+    
+}
+
+
+.header{
+    border-bottom: 2px solid rgba(144, 144, 144,0.5);
+    font-size: 22px;
+    font-weight: 600;
+  
+}
+.repo-link{
+    display: flex;
+    color:blue;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+.issues_each{
+    display: flex;
+
+    padding: 10px 10px;
+    border-bottom: 1px solid rgba(144, 144, 144,0.5);
+}
+
+.issues_each .point{
+    width: 3%;
+    display: flex;
+    padding:0px 2px;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.point img{
+    width:20px;
+    height: 20px;
+}
+
+ul li{
+    list-style: none;
+}
+
+.issue_each_text{
+    display: flex;
+    padding:0px 5px ;
+    flex-direction: column;
+}
+.issue_each_text a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 550;
+}
+
+.issue_each_text a:hover{
+    color: blue;
+
+}
+
+.issue_each_text .issue-number{
+    font-size:0.8rem;
+    margin-left:10px;
+    color:#666;
+}
+
+.issue_each_text .issue-user{
+    font-size:0.8rem;
+    margin-left:10px;
+    color:#888;
+}
+
+@media only screen and (max-width:700px){
+    .issue .links{
+        transition: 0.5s;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

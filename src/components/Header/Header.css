@@ -1,0 +1,51 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:rgb(32, 32, 32) ;
+    width: 100%;
+    display: flex;
+    padding:5px;
+    color: white;
+    font-weight: 600;
+    overflow: hidden-x;
+    
+}
+
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-container .nav-list{
+    
+    width: 100%;
+}
+
+.nav-list ul{
+    display: flex;
+    float: right;
+    margin-right: 50px;
+}
+.nav-list ul li{
+    padding: 0px 10px;
+}
+
+.nav-list ul li a{
+    color:white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}

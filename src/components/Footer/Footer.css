@@ -1,0 +1,18 @@
+.footer{
+    position:absolute,;
+    bottom:0px;
+    left:0px;
+    right: 0px;
+    color:rgb(213, 212, 212);
+    font-size:16px;
+    background-color:rgb(45, 45, 45);
+    text-align:center;
+    padding: 10px 0px;
+    margin: 0px;
+    width: 100%;
+}
+p{
+    font-size: 18px;
+    font-weight: 500;
+    
+}

@@ -1,0 +1,45 @@
+
+.pagination{
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    
+}
+
+.paginationul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.page-item{
+    text-align: center;
+    border: 1px solid grey;
+    width: 100%;
+    padding: 10px;
+    color:black;
+    border-radius: 3px;
+
+}
+
+.page-item:hover{
+    transition: 0.5s;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.page-item.active{
+    color: white;
+    background-color: blue;
+    transition: 0.5s;
+}
+
+.page-link{
+    color: blue;
+}
+
+.page-link.active{
+    color:white;
+    transition: 0.5s;
+}
