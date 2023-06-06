@@ -56,6 +56,7 @@ h1{
 
 .issue-page{
     margin:10px auto;
+    position: relative;
     width: 100%;
     border: 1px solid rgba(144, 144, 144,0.5);
     box-shadow: 0px 0px 5px rgba(144, 144, 144,0.5);
@@ -68,7 +69,16 @@ h1{
     border-bottom: 2px solid rgba(144, 144, 144,0.5);
     font-size: 22px;
     font-weight: 600;
+    position: relative;
   
+}
+.header p:nth-child(2){
+    position: absolute;
+    right:10px;
+    top:0;
+    font-size:17px;
+    margin-top: -2px;
+
 }
 .repo-link{
     display: flex;
@@ -77,12 +87,16 @@ h1{
     font-weight: 600;
 }
 
-
+.issue-list{
+    display: relative;
+    overflow: hidden;
+}
 
 .issues_each{
     display: flex;
-
+    position: inherit;
     padding: 10px 10px;
+    width: 100%;
     border-bottom: 1px solid rgba(144, 144, 144,0.5);
 }
 
@@ -110,7 +124,10 @@ ul li{
 .issue_each_text a{
     text-decoration: none;
     color: black;
-    font-size: 17px;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
     font-weight: 550;
 }
 
@@ -131,10 +148,80 @@ ul li{
     color:#888;
 }
 
+
+.form{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px 0px;
+    margin:10px 0px ;
+}
+
+.form form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.form form label{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.form form input{
+    border: 1ps solid black;
+    border-radius: 5px;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px;
+    margin: 5px 0;
+    
+}
+
+
+.form form button{
+    border:1px solid grey;
+    color: black;
+    background-color: blue;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.form form button:hover{
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+}
+
+
+
 @media only screen and (max-width:700px){
     .issue .links{
         transition: 0.5s;
         align-items: flex-start;
         flex-direction: column;
     }
+    .form form{
+        display: block;
+    }
+
+    .form form button{
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        margin: 5px auto;
+        padding: 10px;
+        
+    }
 }
+

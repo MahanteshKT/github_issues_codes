@@ -9,6 +9,7 @@
     color: white;
     font-weight: 600;
     overflow: hidden-x;
+    z-index: 50;
     
 }
 
@@ -30,7 +31,6 @@
 }
 
 .navbar-container .nav-list{
-    
     width: 100%;
 }
 
@@ -48,4 +48,13 @@
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
+}
+
+@media only screen and (max-width:700px) {
+    .nav-list ul li a{
+        color:white;
+        font-size: 13px;
+        font-weight: 400;
+        text-decoration: none;
+    }   
 }
